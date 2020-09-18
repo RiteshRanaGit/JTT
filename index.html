@@ -907,38 +907,60 @@
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <form class="form-contact js-contact-form" method="POST" action="#">
+                                <form method="POST" action="https://formspree.io/xjvpbzna">
                                     <div class="form-row no-gutters">
                                         <div class="col-md-6">
                                             <input class="au-input" type="text" name="name" placeholder="Name"
                                                 required="required">
                                             <input class="au-input" type="email" name="email"
-                                                placeholder="Email Address" required="required"
-                                                >
+                                                placeholder="Email Address" required="required">
                                             <input class="au-input" type="text" name="phone" placeholder="Phone"
                                                 required="required">
 
-                                            
-                                            <select class="au-input" style="width: 100%;" onchange="choises(this)">
+
+                                            <select class="au-input" style="width: 100%; border: none;"
+                                                onchange="choises(this)" name="Trip_type">
                                                 <option value="">Select type of your journey</option>
                                                 <option value="One way">One Way</option>
                                                 <option value="Two way">Round Trip</option>
                                                 <option value="Tour">Tour Packeg</option>
                                             </select>
+                                             
+
+                                            <div id="pick-drop-date" class="hide">
+                                                <div  class="row ">
+                                                    <div class="col-6">
+                                                        <input class="au-input" type="text" id="birthday" name="pick_date" placeholder="Pickup Date" onfocus="(this.type='date')">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <input class="au-input" type="text" id="birthday" name="drop_date" placeholder="Drop Date" onfocus="(this.type='date')">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div id="pick-date" class="hide">
+                                                <input class="au-input" type="text" id="birthday" name="pick_date" placeholder="Pickup Date" onfocus="(this.type='date')">
+                                            </div>
 
                                             <!--start tour packages-->
                                             <div id="tourPlace" class="hide">
-
-                                                <input class="au-input" list="tourPlaces" name="fromPlace"
-                                                    placeholder="Select your packeg" required="required">
+                                                <input class="au-input" list="tourPlaces" name="Tour_packeg"
+                                                    placeholder="Select your packeg">
 
                                                 <datalist id="tourPlaces">
-                                                    <option value="Himachal full Tour Pack">
-                                                    <option value="Dharamshala Tour Pack">
-                                                    <option value="Kullu-Manali Tour Pack">
-                                                    <option value="Rohtang Tour Pack">
-                                                    <option value="Khajjiar Tour Pack">
-                                                    <option value="Barot Valley Tour Pack"></option>
+                                                    <option value="Himachal Tour Package"></option>
+                                                    <option value="Uttrakhand Tour Package "></option>
+                                                    <option value="Rajasthan Tour Package"></option>
+                                                    <option value="Jammu & kashmir Tour Package"></option>
+                                                    <option value="Amritsir Tour Package"></option>
+                                                    <option value="Devi Darsahan Tour Package"></option>
+                                                    <option value="Coustmise Tour Package"></option>
+
+                                                    <!-- <option value="Dharamshala Tour Package"></option>
+                                                    <option value="Kullu-Manali Tour Package"></option>
+                                                    <option value="Rohtang Tour Package"></option>
+                                                    <option value="Khajjiar Tour Package"></option>
+                                                    <option value="Barot Valley Tour Package"></option> -->
                                                 </datalist>
 
 
@@ -948,33 +970,68 @@
 
                                             <!--start from To -->
                                             <div id="fromTo" class="hide">
-                                                <input class="au-input" list="from" name="fromPlace" placeholder="From"
-                                                    required="required">
+                                                <input class="au-input" list="from" name="from_Place"
+                                                    placeholder="From">
 
                                                 <datalist id="from">
-                                                    <option value="Himachal"></option>
+                                                    <!-- <option value="Himachal"></option> -->
                                                     <option value="Delhi"></option>
                                                     <option value="Chandigadh"></option>
-                                                    <option value="Panjab"></option>
-                                                    <option value="UP(Haridwar)"></option>
-                                                    <option value="UP(Rishikesh)"></option>
-                                                    <option value="UP(Mathura Vrindavan)"></option>
-                                                    <option value="Rajasthan"></option>
-                                                    
+                                                    <option value="Dharamshala(Himachal)"></option>
+                                                    <option value="Amritsir(Punjab)"></option>
+                                                    <option value="Pathankot(Himachal)"></option>
+                                                    <option value="Jammu Kattra(J&K)"></option>
+                                                    <option value="Shimla(Himachal)"></option>
+                                                    <option value="Manali(Himachal)"></option>
+                                                    <option value="Palampur(Himachal)"></option>
+                                                    <option value="Baginath(Himachal)"></option>
+                                                    <option value="Bir Biling(Himachal)"></option>
+                                                    <option value="Kinour(Himachal)"></option>
+                                                    <option value="kinpur(Himachal)"></option>
+                                                    <option value="Haridwar(Uttrakhand)"></option>
+                                                    <option value="Rishikesh(Uttrakhand)"></option>
+                                                    <option value="Dehradoon(Uttrakhand)"></option>
+                                                    <option value="Agra(UP)"></option>
+                                                    <option value="Jaipur(Rajasthan)"></option>
+                                                    <!-- <option value="Panjab"></option> -->
+
+
+                                                    <!-- <option value="Mathura Vrindavan"></option>
+                                                    <option value="Rajasthan"></option> -->
+
                                                 </datalist>
-                                                <input class="au-input" list="To" name="fromPlace" placeholder="To"
-                                                    required="required">
+
+
+                                                
+
+
+                                                <input class="au-input" list="To" name="to_Place" placeholder="To">
 
                                                 <datalist id="To">
-                                                    <option value="Himachal"></option>
+
                                                     <option value="Delhi"></option>
                                                     <option value="Chandigadh"></option>
-                                                    <option value="Panjab"></option>
-                                                    <option value="UP(Haridwar)"></option>
-                                                    <option value="UP(Rishikesh)"></option>
-                                                    <option value="UP(Mathura Vrindavan)"></option>
-                                                    <option value="Rajasthan"></option>
+                                                    <option value="Dharamshala(Himachal)"></option>
+                                                    <option value="Amritsir(Punjab)"></option>
+                                                    <option value="Pathankot(Himachal)"></option>
+                                                    <option value="Jammu Kattra(J&K)"></option>
+                                                    <option value="Shimla(Himachal)"></option>
+                                                    <option value="Manali(Himachal)"></option>
+                                                    <option value="Palampur(Himachal)"></option>
+                                                    <option value="Baginath(Himachal)"></option>
+                                                    <option value="Bir Biling(Himachal)"></option>
+                                                    <option value="Kinour(Himachal)"></option>
+                                                    <option value="kinpur(Himachal)"></option>
+                                                    <option value="Haridwar(Uttrakhand)"></option>
+                                                    <option value="Rishikesh(Uttrakhand)"></option>
+                                                    <option value="Dehradoon(Uttrakhand)"></option>
+                                                    <option value="Agra(UP)"></option>
+                                                    <option value="Jaipur(Rajasthan)"></option>
                                                 </datalist>
+                                                <br>
+
+
+                                                
                                             </div>
                                             <!--end from To -->
 
@@ -1045,13 +1102,13 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="https://formspree.io/xdopnjyb" class="form-contact js-contact-form" method="POST" >
+                        <form action="https://formspree.io/myybgvvr" method="POST">
                             <div class="form-row no-gutters">
                                 <div class="col-md-6">
                                     <input class="au-input" type="text" name="name" placeholder="Name"
                                         required="required">
                                     <input class="au-input" type="email" name="email" placeholder="Email Address"
-                                        required="required" >
+                                        required="required">
                                     <input class="au-input" type="text" name="phone" placeholder="Phone"
                                         required="required">
 
@@ -1070,7 +1127,7 @@
                                             placeholder="Select your packeg" required="required">
 
                                         <datalist id="tourPlaces">
-                                            <option value="Himachal full Tour Pack">
+                                            <option value="Himachal Tour  Package">
                                             <option value="Dhrmshala Tour Pack">
                                             <option value="Kullu-Manali Tour Pack">
                                             <option value="Rohtang Tour Pack">
@@ -1127,7 +1184,7 @@
                 </div>
             </div>
         </div>
-      
+
     </div>
 
     <!-- Jquery JS-->
@@ -1172,8 +1229,9 @@
     <script src="js/global.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
+    <script defer data-key="cab25cfe-1d8e-4a38-b2ac-71e86b37aaa2" src="https://widget.tochat.be/bundle.js"></script>
 
 </body>
 
 </html>
-<!-- end document-->                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+<!-- end document-->
