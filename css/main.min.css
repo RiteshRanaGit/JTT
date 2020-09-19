@@ -17361,7 +17361,22 @@ body .js-preloader{
 }
 .value--dark a {
     color: #164e87;
-} 
+}
+
+@media(max-width: 721px){
+    .media-team .media__img-wrap {
+        position: relative;
+        /* width: 260px;
+        height: 260px; */
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin: 0 auto 36px;
+        /* edit */
+        width: 80px;
+        height: 80px;
+    }
+}
 
 .color{
     color: #002850;
