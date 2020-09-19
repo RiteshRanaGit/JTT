@@ -514,7 +514,7 @@ html {
 }
 
 .ic-fb:hover {
-    color: #3b5998
+    color: #6899d8;
 }
 
 .ic-insta:hover {
@@ -531,6 +531,9 @@ html {
 
 .ic-google:hover {
     color: #dd4b39
+}
+.ic-whatsapp:hover{
+    color: rgb(91, 214, 60);
 }
 
 a {
@@ -2294,12 +2297,15 @@ a:hover {
 
 .media-team .media__img-wrap {
     position: relative;
-    width: 260px;
-    height: 260px;
+    /* width: 260px;
+    height: 260px; */
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    margin: 0 auto 36px
+    margin: 0 auto 36px;
+    /* edit */
+    width: 160px;
+    height: 160px;
 }
 
 .media-team .media__img-wrap .media__img {
@@ -17320,12 +17326,7 @@ button:focus {
     }
 }
 
-.color{
-    color: #002850;
-    color: #164e87;
-    columns: #326ca6;
-    
-}
+
 
 strong{
     color: #002850;
@@ -17357,4 +17358,14 @@ body .js-preloader{
 
 .show{
     display: block;
+}
+.value--dark a {
+    color: #164e87;
+} 
+
+.color{
+    color: #002850;
+    color: #164e87;
+    color: #326ca6;
+    
 }

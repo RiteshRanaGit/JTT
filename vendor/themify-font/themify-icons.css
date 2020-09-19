@@ -31,6 +31,9 @@
 }
 .ti-user:before {
 	content: "\e602";
+	/* edit */
+	color: #326ca6;
+	opacity: 0.3;
 }
 .ti-unlock:before {
 	content: "\e603";
@@ -54,7 +57,11 @@
 	content: "\e609";
 }
 .ti-star:before {
+	
 	content: "\e60a";
+	/* edit */
+	color: #326ca6;
+	opacity: 0.3;
 }
 .ti-spray:before {
 	content: "\e60b";
@@ -568,6 +575,9 @@
 }
 .ti-car:before {
 	content: "\e6b5";
+	/* edit */
+	color: #326ca6;
+	opacity: 0.3;
 }
 .ti-calendar:before {
 	content: "\e6b6";
