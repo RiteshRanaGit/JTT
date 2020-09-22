@@ -17378,6 +17378,51 @@ body .js-preloader{
     }
 }
 
+
+.logoWidth{
+    width: 60px;
+}
+
+.latestVisits{
+    height: auto;
+    padding: 100px 0;
+}
+.clolorFFF{
+    color: #fff;
+}
+
+.mapContact{
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 0;
+}
+
+.mapDiv{
+    padding-bottom: 40px;
+}
+
+.choicesInput{
+    width: 100%;
+    border: none;
+}
+
+.footerPadding{
+    padding: 0 0 20px;
+}
+
+.footerlogo{
+    width: 100px;
+}
+
+.footerText{
+    padding: 30px 0;
+}
+
+.dipNone{
+    display: none;
+}
+
+
 .color{
     color: #002850;
     color: #164e87;
